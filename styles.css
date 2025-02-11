@@ -3,7 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #fff7f0; /* Soft orange background */
+    background-color: #fff7f0;
     color: #1a202c;
 }
 
@@ -23,7 +23,7 @@ header {
 header h1 {
     font-size: 2rem;
     font-weight: bold;
-    color: #E67E22; /* Orange header title */
+    color: #E67E22;
 }
 
 nav {
@@ -33,27 +33,37 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #E67E22; /* Orange navigation links */
+    color: #E67E22;
 }
 
 nav a:hover {
-    color: #d35400; /* Darker orange on hover */
+    color: #d35400;
     text-decoration: underline;
 }
 
+/* Updated Social Links */
 .social-links {
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }
 
 .social-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     text-decoration: none;
-    color: #E67E22; /* Orange social links */
+    color: #E67E22;
+    transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #d35400; /* Darker orange on hover */
-    text-decoration: underline;
+    color: #d35400;
+    text-decoration: none;
+}
+
+.social-links .fab {
+    font-size: 0.9em;
+    color: currentColor;
 }
 
 main {
@@ -63,7 +73,7 @@ main {
 main h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #E67E22; /* Orange headings */
+    color: #E67E22;
 }
 
 main p {
@@ -72,35 +82,46 @@ main p {
 }
 
 main a {
-    color: #E67E22; /* Orange text links */
+    color: #E67E22;
     text-decoration: none;
 }
 
 main a:hover {
-    color: #d35400; /* Darker orange on hover */
+    color: #d35400;
     text-decoration: underline;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #fff3e6; /* Light orange footer background */
+    background-color: #fff3e6;
     margin-top: 40px;
 }
 
-footer .footer-links {
+/* Updated Footer Links */
+.footer-links {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     margin-bottom: 20px;
 }
 
-footer a {
+.footer-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     text-decoration: none;
-    color: #E67E22; /* Orange footer links */
+    color: #E67E22;
+    transition: color 0.3s ease;
 }
 
-footer a:hover {
-    color: #d35400; /* Darker orange on hover */
-    text-decoration: underline;
+.footer-links a:hover {
+    color: #d35400;
+    text-decoration: none;
+}
+
+.footer-links .fas,
+.footer-links .fab {
+    font-size: 1em;
+    color: currentColor;
 }
