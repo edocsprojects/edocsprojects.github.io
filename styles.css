@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Acme', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -40,8 +40,6 @@ nav a:hover {
     color: #d35400;
     text-decoration: underline;
 }
-
-/* Updated Social Links */
 .social-links {
     display: flex;
     gap: 15px;
