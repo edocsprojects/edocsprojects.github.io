@@ -1,125 +1,55 @@
-body {
-    font-family: 'Outfit', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #fff7f0;
-    color: #1a202c;
-}
-
-.container {
-    max-width: 1050px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-header h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #E67E22;
-}
-
-nav {
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #E67E22;
-}
-
-nav a:hover {
-    color: #d35400;
-    text-decoration: underline;
-}
-
-.social-links {
-    display: flex;
-    gap: 15px;
-}
-
-.social-links a {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    color: #E67E22;
-    transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-    color: #d35400;
-    text-decoration: none;
-}
-
-.social-links .fab {
-    font-size: 0.9em;
-    color: currentColor;
-}
-
-main {
-    margin-bottom: 40px;
-}
-
-main h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #E67E22;
-}
-
-main p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-main a {
-    color: #E67E22;
-    text-decoration: none;
-}
-
-main a:hover {
-    color: #d35400;
-    text-decoration: underline;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff3e6;
-    margin-top: 40px;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin-bottom: 20px;
-}
-
-.footer-links a {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    color: #E67E22;
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #d35400;
-    text-decoration: none;
-}
-
-.footer-links .fas,
-.footer-links .fab {
-    font-size: 1em;
-    color: currentColor;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>EDO</h1>
+            <nav>
+                <a href="/exp">work</a>
+                <a href="/exp#Projects">projects</a>
+                <a href="/contact">contact</a>
+            </nav>
+            <div class="social-links">
+                <a href="https://github.com/edocsprojects">
+                    <i class="fab fa-github"></i>
+                    /edocsprojects
+                </a>
+                <a href="https://linkedin.com/in/ethanddo">
+                    <i class="fab fa-linkedin"></i>
+                    /in/ethanddo
+                </a>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h2>hi, i'm ethan!</h2>
+                <p>test</p>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-links">
+                <a href="mailto:edocsprojects@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                    [email&#160;protected]
+                </a>
+                <a href="https://github.com/edocsprojects">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/ethanddo">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
