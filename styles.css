@@ -1,5 +1,5 @@
 body {
-    font-family: 'Acme', sans-serif;
+    font-family: 'Outfit', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -40,6 +40,7 @@ nav a:hover {
     color: #d35400;
     text-decoration: underline;
 }
+
 .social-links {
     display: flex;
     gap: 15px;
@@ -96,7 +97,6 @@ footer {
     margin-top: 40px;
 }
 
-/* Updated Footer Links */
 .footer-links {
     display: flex;
     justify-content: center;
