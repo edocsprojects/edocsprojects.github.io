@@ -182,13 +182,13 @@ footer {
   /* main h2 {
   } */
   main p {
-    margin-right: 300px;
+    margin-right: 50%;
   }
   .profile-circle {
     /* display: none; */
     width: 275px;
     height: 275px;
     top: 50px;
-    left: 10px;
+    left: 3%;
   }
 }
