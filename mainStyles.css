@@ -79,23 +79,6 @@ nav a:hover {
   text-decoration: none;
 }
 
-@media (max-width: 1000px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  nav {
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 0;
-  }
-  .social-links {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-  }
-}
-
 main {
   margin-bottom: 40px;
 }
@@ -138,12 +121,6 @@ main a:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
-@media (max-width: 1000px) {
-  .profile-circle {
-    display: none;
-  }
-}
-
 footer {
   text-align: center;
   padding: 20px;
@@ -173,4 +150,29 @@ footer {
 .footer-links a:hover {
   color: #d35400;
   text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0;
+  }
+  .social-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  main p {
+    max-width: 40%;
+  }
+  .profile-circle {
+    /* display: none; */
+    top: 60px;
+    left: 40px;
+  }
 }
