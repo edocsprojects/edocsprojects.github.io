@@ -93,7 +93,7 @@ main h2 {
 main p {
   font-size: 1.25rem;
   margin-bottom: 20px;
-  margin-right: 40%;
+  margin-right: 425px;
 }
 
 main a {
@@ -155,11 +155,16 @@ footer {
 
 @media (max-width: 1300px) {
   .container{
-    padding-left: 105px;
+    width: 600px;
+    margin: 0 auto;
+    padding: 125px;
+    flex: 1;
+    min-height: 65vh;
+    padding-bottom: 100px;
   }
   header {
+    align-items: baseline;
     flex-direction: column;
-    align-items: flex-start;
   }
   nav {
     flex-direction: column;
@@ -167,12 +172,16 @@ footer {
     margin-left: 0;
   }
   .social-links {
+    display: inline-flex;
     flex-direction: column;
     gap: 10px;
     margin-top: 10px;
   }
+  /* main h2 {
+    
+  } */
   main p {
-    max-width: 25%;
+    margin-right: 350px;
   }
   .profile-circle {
     /* display: none; */
