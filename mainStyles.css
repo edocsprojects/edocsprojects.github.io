@@ -155,7 +155,7 @@ footer {
 
 @media (max-width: 1300px) {
   .container{
-    padding-left: 115px;
+    padding-left: 105px;
   }
   header {
     flex-direction: column;
