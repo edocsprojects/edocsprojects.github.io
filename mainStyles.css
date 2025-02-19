@@ -155,7 +155,7 @@ footer {
 
 @media (max-width: 1300px) {
   .container{
-    padding-left: 0px;
+    padding-left: 115px;
   }
   header {
     flex-direction: column;
@@ -172,12 +172,12 @@ footer {
     margin-top: 10px;
   }
   main p {
-    max-width: 30%;
+    max-width: 25%;
   }
   .profile-circle {
     /* display: none; */
-    width: 300px;
-    height: 300px;
+    width: 275px;
+    height: 275px;
     top: 50px;
     left: 0px;
   }
