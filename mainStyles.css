@@ -2,9 +2,10 @@
 body {
   font-family: "Outfit", sans-serif;
   line-height: 1.6;
+  transform: scale(1.2);
   margin: 0;
   padding: 0;
-  background-color: #fff7f0;
+  background-color: #FFFFFF;
   color: #1a202c;
   min-height: 100vh;
   display: flex;
@@ -12,11 +13,11 @@ body {
 }
 
 .container {
-  width: 1050px;
+  width: 1100px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 100px;
   flex: 1;
-  min-height: 90vh;
+  min-height: 65vh;
   padding-bottom: 100px;
 }
 
@@ -33,7 +34,7 @@ header h1 a {
 }
 
 header h1 {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   font-weight: bold;
   color: #e67e22;
 }
@@ -49,7 +50,7 @@ nav {
 }
 
 nav a {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   text-decoration: none;
   color: #e67e22;
 }
@@ -60,7 +61,7 @@ nav a:hover {
 }
 
 .social-links {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   display: flex;
   gap: 15px;
 }
@@ -79,37 +80,20 @@ nav a:hover {
   text-decoration: none;
 }
 
-@media (max-width: 1000px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  nav {
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 0;
-  }
-  .social-links {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-  }
-}
-
 main {
   margin-bottom: 40px;
 }
 
 main h2 {
-  font-size: 2rem;
+  font-size: 2.15rem;
   margin-bottom: 20px;
   color: #e67e22;
 }
 
 main p {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   margin-bottom: 20px;
-  margin-right: 40%;
+  margin-right: 425px;
 }
 
 main a {
@@ -123,25 +107,19 @@ main a:hover {
 }
 
 .profile-circle {
-  width: 325px;
-  height: 325px;
+  width: 340px;
+  height: 340px;
   background-color: #FFFFFF;
   border-radius: 50%;
   position: relative;
-  right: -720px;
-  top: -215px;
+  right: -750px;
+  top: -225px;
   z-index: 10;
   background-image: url('/me.jpg');
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-}
-
-@media (max-width: 1000px) {
-  .profile-circle {
-    display: none;
-  }
 }
 
 footer {
@@ -173,4 +151,44 @@ footer {
 .footer-links a:hover {
   color: #d35400;
   text-decoration: none;
+}
+
+@media (max-width: 1300px) {
+  .container{
+    width: 600px;
+    margin: 0 auto;
+    padding: 125px;
+    flex: 1;
+    min-height: 65vh;
+    padding-bottom: 100px;
+    padding-left: 10%;
+    padding-right: 20%;
+  }
+  header {
+    align-items: baseline;
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0;
+  }
+  .social-links {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  /* main h2 {
+  } */
+  main p {
+    margin-right: 50%;
+  }
+  .profile-circle {
+    /* display: none; */
+    width: 275px;
+    height: 275px;
+    top: 50px;
+    left: 3%;
+  }
 }
