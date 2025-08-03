@@ -1,79 +1,106 @@
 /* otherStyles.css */
 .showcase-content {
-  width: 800px;
-  margin: 0 auto;
-  padding-top: 0px;
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 0px;
 }
 
 .showcase-content h2 {
-  font-size: 2rem;
-  color: #e67e22;
-  margin-bottom: 40px;
-  text-align: center;
+    font-size: 2.0rem;
+    color: #012972;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .showcase-box {
-  background-color: #faefdf;
-  border-radius: 10px;
-  padding: 15px;
-  margin-bottom: 30px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    padding: 35px 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    align-items: flex-start; 
+    gap: 25px; 
 }
 
 .showcase-box:hover {
-  transform: translateY(-3px);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.showcase-image {
+    width: 125px;
+    height: 125px;
+    background-color: #fdfdfd;; 
+    border-radius: 8px;
+    flex-shrink: 0; 
+}
+
+.showcase-text {
+    flex: 1; 
 }
 
 .showcase-box h3 {
-  font-size: 1.5rem;
-  color: #d35400;
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    font-size: 1.5rem;
+    color: #012972;
+    margin-top: 0; 
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.showcase-box a:hover h3 {
+    text-decoration: underline;
 }
 
 .showcase-box p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+    color: #334d6e;
 }
 
 .showcase-box a {
-  color: #e67e22;
-  text-decoration: none;
-  font-weight: bold;
-  border-bottom: 2px solid transparent;
-  transition: all 0.2s ease;
+    color: #012972;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
 }
 
 .showcase-box a:hover {
-  color: #d35400;
-  border-bottom-color: #d35400;
+    color: #012972;
+    border-bottom-color: #012972;
 }
 
 @media (max-width: 768px) {
-  .showcase-content {
-    padding: 0 15px;
-  }
-
-  .showcase-box {
-    padding: 20px;
-  }
-
-  .showcase-content h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-  }
+    .showcase-content {
+        padding: 0 15px;
+    }
+    
+    .showcase-box {
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .showcase-content h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 480px) {
-  .showcase-box h3 {
-    font-size: 1.3rem;
-  }
+    .showcase-box {
+        flex-direction: column;
+    }
 
-  .showcase-box p {
-    font-size: 1rem;
-  }
+    .showcase-box h3 {
+        font-size: 1.3rem;
+    }
+    
+    .showcase-box p {
+        font-size: 1rem;
+    }
 }

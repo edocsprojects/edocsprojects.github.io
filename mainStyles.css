@@ -5,19 +5,21 @@ body {
   transform: scale(1.2);
   margin: 0;
   padding: 0;
-  background-color: #FFFFFF;
-  color: #1a202c;
+  background-color: #f3f8ff;
+  color: #012972;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 .container {
-  width: 1100px;
+
+  max-width: 850px;
+  width: 90%;
   margin: 0 auto;
   padding: 100px;
   flex: 1;
-  min-height: 65vh;
+  min-height: 87.5vh;
   padding-bottom: 100px;
 }
 
@@ -28,35 +30,40 @@ header {
   margin-bottom: 40px;
 }
 
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
 header h1 a {
   text-decoration: none;
-  color: #e67e22;
+  color: #012972;
 }
 
 header h1 {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #e67e22;
+  color: #012972;
 }
 
 header h1 a:visited {
-  color: #e67e22;
+  color: #012972;
 }
 
 nav {
   display: flex;
-  gap: 15%;
-  margin-left: -40%;
+  gap: 20px;
 }
 
 nav a {
   font-size: 1.25rem;
   text-decoration: none;
-  color: #e67e22;
+  color: #012972;
 }
 
 nav a:hover {
-  color: #d35400;
+  color: #012972;
   text-decoration: underline;
 }
 
@@ -71,61 +78,102 @@ nav a:hover {
   align-items: center;
   gap: 8px;
   text-decoration: none;
-  color: #e67e22;
+  color: #012972;
   transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-  color: #d35400;
-  text-decoration: none;
+  color: #012972;
+  text-decoration: underline;
 }
 
 main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
   margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+main > section {
+  flex: 1;
 }
 
 main h2 {
   font-size: 2.15rem;
   margin-bottom: 20px;
-  color: #e67e22;
+  color: #012972;
+  margin-top: 0;
 }
 
 main p {
   font-size: 1.25rem;
   margin-bottom: 20px;
-  margin-right: 425px;
 }
 
 main a {
-  color: #e67e22;
+  color: #012972;
   text-decoration: none;
 }
 
 main a:hover {
-  color: #d35400;
-  text-decoration: underline;
+  color: #012972;
+  text-decoration: none;
 }
 
 .profile-circle {
-  width: 340px;
-  height: 340px;
-  background-color: #FFFFFF;
+  width: 300px;
+  height: 300px;
+  background-color: #012972;
   border-radius: 50%;
-  position: relative;
-  right: -750px;
-  top: -225px;
-  z-index: 10;
-  background-image: url('/me.jpg');
-  background-size: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+  background-image: url("assets/images/me.jpg");
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  outline: 4px solid #012972;
+  outline-offset: 5px;
+}
+
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .header-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .social-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .profile-circle {
+    display: none;
+  }
+
+  main {
+    flex-direction: column;
+  }
 }
 
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #faefdf;
+  background-color: #fdfdfd;
   position: relative;
   z-index: 100;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
@@ -144,51 +192,11 @@ footer {
   align-items: center;
   gap: 8px;
   text-decoration: none;
-  color: #e67e22;
+  color: #012972;
   transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-  color: #d35400;
-  text-decoration: none;
-}
-
-@media (max-width: 1300px) {
-  .container{
-    width: 600px;
-    margin: 0 auto;
-    padding: 125px;
-    flex: 1;
-    min-height: 65vh;
-    padding-bottom: 100px;
-    padding-left: 10%;
-    padding-right: 20%;
-  }
-  header {
-    align-items: baseline;
-    flex-direction: column;
-  }
-  nav {
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 0;
-  }
-  .social-links {
-    display: inline-flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  /* main h2 {
-  } */
-  main p {
-    margin-right: 50%;
-  }
-  .profile-circle {
-    /* display: none; */
-    width: 275px;
-    height: 275px;
-    top: 50px;
-    left: 3%;
-  }
+  color: #012972;
+  text-decoration: underline;
 }
