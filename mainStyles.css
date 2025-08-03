@@ -2,7 +2,6 @@
 body {
   font-family: "Outfit", sans-serif;
   line-height: 1.6;
-  transform: scale(1.2);
   margin: 0;
   padding: 0;
   background-color: #f3f8ff;
@@ -13,11 +12,10 @@ body {
 }
 
 .container {
-
   max-width: 850px;
   width: 90%;
   margin: 0 auto;
-  padding: 100px;
+  padding: 20px;
   flex: 1;
   min-height: 87.5vh;
   padding-bottom: 100px;
@@ -36,14 +34,14 @@ header {
   gap: 25px;
 }
 
-header h1 a {
-  text-decoration: none;
+header h1 {
+  font-size: 1.15rem;
+  font-weight: bold;
   color: #012972;
 }
 
-header h1 {
-  font-size: 1.25rem;
-  font-weight: bold;
+header h1 a {
+  text-decoration: none;
   color: #012972;
 }
 
@@ -57,18 +55,17 @@ nav {
 }
 
 nav a {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   text-decoration: none;
   color: #012972;
 }
 
 nav a:hover {
-  color: #012972;
   text-decoration: underline;
 }
 
 .social-links {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   display: flex;
   gap: 15px;
 }
@@ -83,7 +80,6 @@ nav a:hover {
 }
 
 .social-links a:hover {
-  color: #012972;
   text-decoration: underline;
 }
 
@@ -92,8 +88,7 @@ main {
   justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
-  margin-bottom: 40px;
-  margin-top: 10px;
+  margin: 10px 0 40px;
 }
 
 main > section {
@@ -101,14 +96,13 @@ main > section {
 }
 
 main h2 {
-  font-size: 2.15rem;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin: 0 0 20px;
   color: #012972;
-  margin-top: 0;
 }
 
 main p {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
@@ -118,7 +112,6 @@ main a {
 }
 
 main a:hover {
-  color: #012972;
   text-decoration: none;
 }
 
@@ -136,6 +129,7 @@ main a:hover {
   outline-offset: 5px;
 }
 
+/* Responsive */
 @media (max-width: 900px) {
   header {
     flex-direction: column;
@@ -168,6 +162,20 @@ main a:hover {
   main {
     flex-direction: column;
   }
+
+  main h2 {
+    font-size: 1.7rem;
+  }
+
+  main p {
+    font-size: 1rem;
+  }
+
+  header h1,
+  nav a,
+  .social-links {
+    font-size: 1rem;
+  }
 }
 
 footer {
@@ -197,6 +205,5 @@ footer {
 }
 
 .footer-links a:hover {
-  color: #012972;
   text-decoration: underline;
 }
