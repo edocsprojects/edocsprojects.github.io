@@ -1,106 +1,130 @@
 <!DOCTYPE html>
 <!-- projects/index.html -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my projects!</title>
-    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../mainStyles.css">
-    <link rel="stylesheet" href="../otherStyles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../mainStyles.css" />
+    <link rel="stylesheet" href="../otherStyles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <div class="header-left">
-                <h1>
-                    <a href="/">ethanddo</a>
-                </h1>
-                <nav>
-                    <a href="../projects">projects</a>
-                    <a href="../contact">contact</a>
-                </nav>
+      <header>
+        <div class="header-left">
+          <h1>
+            <a href="/">ethanddo</a>
+          </h1>
+          <nav>
+            <a href="../projects">projects</a>
+            <a href="../contact">contact</a>
+          </nav>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/edocsprojects" target="_blank">
+            <i class="fab fa-github"></i>
+            / edocsprojects
+          </a>
+          <a href="https://linkedin.com/in/ethanddo" target="_blank">
+            <i class="fab fa-linkedin"></i>
+            / ethanddo
+          </a>
+        </div>
+      </header>
+      <main>
+        <section class="showcase-content">
+          <h2>some of my work!</h2>
+
+          <div class="showcase-box">
+            <div class="showcase-image"></div>
+
+            <div class="showcase-text">
+              <a
+                href="https://github.com/edocsprojects/keda-android-farm"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit"
+              >
+                <h3>Keda Android Farm</h3>
+              </a>
+              <p>
+                A scalable Android emulator farm built on Kubernetes (k3d) and
+                powered by KEDA for event-driven autoscaling.
+              </p>
             </div>
-            <div class="social-links">
-                <a href="https://github.com/edocsprojects" target="_blank">
-                    <i class="fab fa-github"></i>
-                    / edocsprojects
-                </a>
-                <a href="https://linkedin.com/in/ethanddo" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                    / ethanddo
-                </a>
+          </div>
+
+          <div class="showcase-box">
+            <div class="showcase-image">
+              <img src="../assets/images/drone_simulation.png" />
             </div>
-        </header>
-        <main>
-            <section class="showcase-content">
-                <h2>some of my work!</h2>
 
-                <div class="showcase-box">
-                    <div class="showcase-image">
+            <div class="showcase-text">
+              <a
+                href="https://hub.docker.com/repository/docker/ethanddo/drone_simulation/general"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit"
+              >
+                <h3>Drone Simulation Model</h3>
+              </a>
+              <p>
+                A comprehensive 3D drone delivery simulation in C++ that uses
+                object-oriented design patterns to manage a complex,
+                multi-entity system.
+              </p>
+            </div>
+          </div>
 
-                    </div>
+          <div class="showcase-box">
+            <div class="showcase-image">
+              <img src="../assets/images/chimein.png" />
+            </div>
 
-                    <div class="showcase-text">
-                        <a href="https://github.com/edocsprojects/keda-android-farm" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
-                            <h3>Keda Android Farm</h3>
-                        </a>
-                        <p>
-                            A scalable Android emulator farm built on Kubernetes (k3d) and powered by KEDA for event-driven autoscaling.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="showcase-box">
-                    <div class="showcase-image">
-                        <img src="../assets/images/drone_simulation.png">
-                    </div>
-
-                    <div class="showcase-text">
-                        <a href="https://hub.docker.com/repository/docker/ethanddo/drone_simulation/general" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
-                            <h3>Drone Simulation Model</h3>
-                        </a>
-                        <p>
-                            A comprehensive 3D drone delivery simulation in C++ that uses object-oriented design patterns to manage a complex, multi-entity system.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="showcase-box">
-                    <div class="showcase-image">
-                        <img src="../assets/images/chimein.png">
-                    </div>
-
-                    <div class="showcase-text">
-                        <a href="https://github.com/edocsprojects/ChimeIn" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
-                            <h3>ChimeIn Google Extension</h3>
-                        </a>
-                        <p>
-                            This extension intercepts website's request as questions are displayed. The tool then processes this data to identify the correct answer and shows it in a convenient popup for you to use.
-                        </p>
-                    </div>
-                </div>
-
-            </section>
-        </main>
+            <div class="showcase-text">
+              <a
+                href="https://github.com/edocsprojects/ChimeIn"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit"
+              >
+                <h3>ChimeIn Google Extension</h3>
+              </a>
+              <p>
+                This extension intercepts website's request as questions are
+                displayed. The tool then processes this data to identify the
+                correct answer and shows it in a convenient popup for you to
+                use.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
     <footer id="footer">
-        <div class="footer-links">
-            <a href="mailto:edocsprojects@gmail.com">
-                <i class="fas fa-envelope"></i>
-                Email
-            </a>
-            <a href="https://github.com/edocsprojects" target="_blank">
-                <i class="fab fa-github"></i>
-                GitHub
-            </a>
-            <a href="https://linkedin.com/in/ethanddo" target="_blank">
-                <i class="fab fa-linkedin"></i>
-                LinkedIn
-            </a>
-        </div>
+      <div class="footer-links">
+        <a href="mailto:edocsprojects@gmail.com">
+          <i class="fas fa-envelope"></i>
+          Email
+        </a>
+        <a href="https://github.com/edocsprojects" target="_blank">
+          <i class="fab fa-github"></i>
+          GitHub
+        </a>
+        <a href="https://linkedin.com/in/ethanddo" target="_blank">
+          <i class="fab fa-linkedin"></i>
+          LinkedIn
+        </a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

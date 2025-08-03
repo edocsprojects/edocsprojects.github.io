@@ -129,7 +129,6 @@ main a:hover {
   outline-offset: 5px;
 }
 
-/* Responsive */
 @media (max-width: 900px) {
   header {
     flex-direction: column;
