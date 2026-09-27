@@ -1,6 +1,6 @@
 /* mainStyles.css */
 body {
-  font-family: "Outfit", sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -85,15 +85,7 @@ nav a:hover {
 }
 
 main {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
   margin: 10px 0 40px;
-}
-
-main > section {
-  flex: 1;
 }
 
 main h2 {
@@ -114,20 +106,6 @@ main a {
 
 main a:hover {
   text-decoration: none;
-}
-
-.profile-circle {
-  width: 300px;
-  height: 300px;
-  background-color: #012972;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  flex-shrink: 0;
-  background-image: url("assets/images/me.jpg");
-  background-size: cover;
-  background-position: center;
-  outline: 4px solid #012972;
-  outline-offset: 5px;
 }
 
 @media (max-width: 900px) {
@@ -153,14 +131,6 @@ main a:hover {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-  }
-
-  .profile-circle {
-    display: none;
-  }
-
-  main {
-    flex-direction: column;
   }
 
   main h2 {
